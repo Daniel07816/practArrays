@@ -16,6 +16,7 @@ public class Tarea
         {
             if(debitos[a] == 0.0)
             {
+                System.out.println(" ");
                 System.out.println("Ingrese el debito: ");
                 debitos[a] = ingreso.nextDouble();
                 c++; 
@@ -38,6 +39,7 @@ public class Tarea
         {
             if(creditos[b] == 0.0)
             {
+                System.out.println(" ");
                 System.out.println("Ingrese el debito: ");
                 creditos[b] = ingreso.nextDouble();
                 c++; 
@@ -129,6 +131,8 @@ public class Tarea
         ptCre();
         System.out.println("Q" + ptDeb() + "  " + "Q" + ptCre());
         System.out.println("Saldo: " + (ptDeb()-ptCre()));
+        System.out.println(" ");
+        System.out.println(" ");
     }
 
     //eliminar creditos de los datos
@@ -146,6 +150,7 @@ public class Tarea
             }
             else if(g == creditos.length){
                 System.out.println("El crédito que quiere elminar no existe.");
+                System.out.println(" ");
             }
         }
     }
@@ -157,6 +162,7 @@ public class Tarea
         {
             System.out.println("***MENU***");
             System.out.println("Seleccione el numero de la accion que desea realizar");
+            System.out.println(" ");
             System.out.println("1. Generar un debito");
             System.out.println("2. Generar un credito");
             System.out.println("3. Total de debitos");
@@ -167,6 +173,7 @@ public class Tarea
             System.out.println("8. Total de operaciones");
             System.out.println("9. Borrar un credito");
             System.out.println("10. SALIDA DEL SISTEMA");
+            System.out.println(" ");
             selector = ingreso.nextInt(); 
             ingreso.nextLine();
 
@@ -174,40 +181,57 @@ public class Tarea
             {
                 case 1:
                 genDeb();
+                System.out.println(" ");
                 System.out.println("Debito generado con exito");
+                System.out.println(" ");
                 break;
 
                 case 2:
                 genCre();
+                System.out.println(" ");
                 System.out.println("Credito generado con exito");
+                System.out.println(" ");
                 break;
 
                 case 3:
+                System.out.println(" ");
                 System.out.println("\nTotal de debitos: Q" + ptDeb());
+                System.out.println(" ");
                 break;
 
                 case 4:
+                System.out.println(" ");
                 System.out.println("\nTotal de creditos: Q" + ptCre());
+                System.out.println(" ");
                 break;
 
                 case 5:
+                System.out.println(" ");
                 System.out.println("\nEl saldo es de: Q" + (ptDeb()-ptCre()));
+                System.out.println(" ");
                 break;
 
                 case 6:
+                System.out.println(" ");
                 System.out.println("\nEl promedio de los debitos es: Q" + prom());
+                System.out.println(" ");
                 break;
 
                 case 7:
+                System.out.println(" ");
                 System.out.println("\nEl debito mas grande en el sistema es de: Q" + max());
+                System.out.println(" ");
                 break;
 
                 case 8:
-                System.out.println("\nAcciones realizadas al momento" + c);
+                System.out.println(" ");
+                System.out.println("\nAcciones realizadas al momento: " + c);
                 operaciones();
+                System.out.println(" ");
                 break;
 
                 case 9:
+                System.out.println(" ");
                 System.out.println("Escriba el credito que desea borrar: ");
                 double delete = ingreso.nextDouble();
                 delCre(delete);
@@ -218,7 +242,8 @@ public class Tarea
                 System.out.println("El promedio de los debitos es: Q" + prom());
                 System.out.println("El debito más grande es de Q" + max());
                 operaciones(); 
-                System.out.println("\nAcciones realizadas al momento" + c);
+                System.out.println("\nAcciones realizadas al momento: " + c);
+                System.out.println(" ");
                 break;
 
                 case 10:
