@@ -227,7 +227,7 @@ public class Tarea
                 break;
 
                 default:
-                system.out.println("Ingrese un numero valido");
+                System.out.println("Ingrese un numero valido");
             }
         }
     }
