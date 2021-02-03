@@ -156,7 +156,7 @@ public class Tarea
         while(selector != 10)
         {
             System.out.println("***MENU***");
-            System.out.println("Seleccione el numero de la accipn que desea realizar");
+            System.out.println("Seleccione el numero de la accion que desea realizar");
             System.out.println("1. Generar un debito");
             System.out.println("2. Generar un credito");
             System.out.println("3. Total de debitos");
@@ -212,11 +212,11 @@ public class Tarea
                 double delete = ingreso.nextDouble();
                 delCre(delete);
                 System.out.println("");
-                System.out.println("El total de débitos es: Q" + ptDeb());
-                System.out.println("El total de créditos es: Q" + ptCre());
+                System.out.println("El total de debitos es: Q" + ptDeb());
+                System.out.println("El total de creditos es: Q" + ptCre());
                 System.out.println("Su saldo es: " + (ptDeb()-ptCre()));
-                System.out.println("El promedio de los débitos es: Q" + prom());
-                System.out.println("El débito más grande es de Q" + max());
+                System.out.println("El promedio de los debitos es: Q" + prom());
+                System.out.println("El debito más grande es de Q" + max());
                 operaciones(); 
                 System.out.println("\nAcciones realizadas al momento" + c);
                 break;
